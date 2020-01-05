@@ -1,0 +1,118 @@
+*, *::before, *::after {
+    font-family: sans-serif;
+  }
+
+body{
+    background: linear-gradient(to left, rgb(52,161,235), rgb(235,70,52));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 90%;
+    width: 1200px;
+    background-color: antiquewhite;
+    box-shadow: 0 5px 10px black;
+    border-radius: 7px;
+}
+
+.content {
+    padding: 40px;
+    margin-top: 50px;
+}
+
+.header {
+    background-color: #222;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.icon-container {
+    position: relative;
+    top: 70px;
+    padding: 20px;
+    background-color: antiquewhite;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.general-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.status {
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+.location {
+    font-size: 15pt;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.details-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.detail .title {
+    font-size: 15pt;
+    flex-grow: 1;
+    font-weight: bold;
+    color: #777;
+}
+
+.detail .value {
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.detail.bordered {
+    border-left: 1px solid #777;
+    border-right: 1px solid #777;
+}
+
+.city-search-container{
+    display: flex;
+    justify-content: center;
+}
+.city-search {
+    margin-top: 40px;
+    font-size: 25pt;
+    outline: none;
+    border: 1px solid #777;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.darksky-logo{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: black;
+}
